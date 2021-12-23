@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>index</title>
+	<style type="text/css" media="screen">
+		body {
+			background-color: skyblue;
+			text-decoration-color: white;
+			font-size:2em;
+		}
+	</style>
+</head>
+<body>
+	<center>
+		
+		Welcome <%=name%>, data from app.js.
+		<% var data = { hobbies:['playing football', 'playing chess']};%>
+
+		<ul>
+			<% data.hobbies.forEach(function(item){ %>
+            <li><%=item%></li>
+		<%});%>
+
+
+		</ul>
+	</center>
+</body>
+</html>				
